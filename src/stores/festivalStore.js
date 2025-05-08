@@ -323,8 +323,8 @@ export const useFestivalStore = defineStore('festival', {
     getSecretContent(secretId, type) {
       // 根据秘密ID和类型返回对应内容
       const secretContents = {
-        'qingming-special-avatar': '/src/assets/ancestors/special/qingming_avatar.svg',
-        'zhongyuan-special-avatar': '/src/assets/ancestors/special/zhongyuan_avatar.svg',
+        'qingming-special-avatar': '/assets/ancestors/special/qingming_avatar.svg',
+        'zhongyuan-special-avatar': '/assets/ancestors/special/zhongyuan_avatar.svg',
         'qingming-hidden-identity': '前朝大学士，因直言进谏被贬，精通诗词歌赋',
         'zhongyuan-hidden-identity': '阴间判官，专管阳间善恶，暗中观察后人行为',
         'zhongyuan-special-reply': '吾乃阴司判官，今日特开冥府之门，聆听汝之心声。阳寿有定，善恶有报，切记勿造业障，好自为之。'

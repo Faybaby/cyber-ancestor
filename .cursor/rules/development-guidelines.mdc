@@ -1,0 +1,67 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Development Guidelines
+
+## Code Organization
+
+1. Component Structure
+   - Single responsibility principle
+   - Props validation required
+   - Emit events for parent communication
+   - Use composition API with `<script setup>`
+
+2. State Management
+   - Use Pinia stores in [src/stores](mdc:src/stores)
+   - Avoid prop drilling
+   - Keep state mutations atomic
+   - Document store actions
+
+3. Routing
+   - Define routes in [src/router](mdc:src/router)
+   - Use lazy loading for route components
+   - Implement navigation guards
+   - Handle 404 cases
+
+## Best Practices
+
+1. Performance
+   - Lazy load heavy components
+   - Use virtual scrolling for lists
+   - Optimize asset loading
+   - Cache API responses
+
+2. Error Handling
+   - Use try-catch blocks
+   - Log errors appropriately
+   - Show user-friendly messages
+   - Implement fallbacks
+
+3. Testing
+   - Write unit tests for components
+   - Test edge cases
+   - Mock external dependencies
+   - Use Vue Test Utils
+
+## Development Setup
+
+1. Environment
+   - Node.js 16+
+   - pnpm package manager
+   - Vue DevTools
+   - VS Code + Volar
+
+2. Commands
+   ```bash
+   pnpm install     # Install dependencies
+   pnpm dev         # Start development server
+   pnpm build      # Build for production
+   pnpm preview    # Preview production build
+   ```
+
+3. Configuration
+   - Vite config in [vite.config.js](mdc:vite.config.js)
+   - Wrangler settings in [wrangler.jsonc](mdc:wrangler.jsonc)
+   - VS Code settings in [.vscode/settings.json](mdc:.vscode/settings.json)

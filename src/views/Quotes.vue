@@ -166,7 +166,7 @@ const favoriteQuotes = computed(() => {
 })
 
 const placeholderAvatar = computed(() =>
-  currentAncestor.value.avatar || '/src/assets/ancestors/default-ancestor.png'
+  currentAncestor.value.avatar || '/assets/ancestors/default-ancestor.png'
 )
 
 const newQuotesCount = computed(() => ancestorStore.newQuotesCount)

@@ -1,0 +1,78 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Styling and Components Guide
+
+The project uses Element Plus for UI components with custom styling and animations.
+
+## Global Styles
+
+[style.css](mdc:src/style.css) contains:
+- Color variables
+- Typography settings
+- Animation keyframes
+- Utility classes
+- Layout primitives
+
+## Theme System
+
+1. Color Scheme
+   - Dark theme with gradient backgrounds
+   - Accent colors for interactions
+   - Emotion-based color feedback
+   - Accessibility-friendly contrast
+
+2. Typography
+   - Noto Serif SC for traditional text
+   - System fonts for UI elements
+   - Responsive font sizing
+   - Line height optimization
+
+## Component Library
+
+1. Ancestor Components
+   - Avatar display
+   - Trait tags
+   - Evolution progress
+   - Emotion indicators
+
+2. Interaction Components
+   - Offering buttons
+   - Cooldown indicators
+   - Affection meter
+   - Quote bubbles
+
+3. Game Components
+   - Quiz cards
+   - Red packet animations
+   - Progress indicators
+   - Result displays
+
+4. Share Components
+   - Template cards
+   - Preview frames
+   - Social buttons
+   - Image generators
+
+## Animation System
+
+1. Micro-interactions
+   - Button hover effects
+   - State transitions
+   - Loading indicators
+   - Error feedback
+
+2. Major Animations
+   - Page transitions
+   - Quote typing effect
+   - Evolution celebrations
+   - Share card generation
+
+## Responsive Design
+
+- Mobile-first approach
+- Breakpoint system
+- Flexible layouts
+- Touch-friendly interactions

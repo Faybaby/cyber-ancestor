@@ -1,0 +1,58 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# 赛博祭祖 · Cyber Ancestor Worship
+
+A modern take on traditional Qingming Festival ancestor worship, implemented as an interactive web game.
+
+## Project Structure
+
+- Entry Point: [index.html](mdc:index.html) and [src/main.js](mdc:src/main.js)
+- Core Components:
+  - Views: [src/views/](mdc:src/views) - Main page components
+  - Components: [src/components/](mdc:src/components) - Reusable UI components
+  - Stores: [src/stores/](mdc:src/stores) - Pinia state management
+  - Router: [src/router/](mdc:src/router) - Vue Router configuration
+  - Assets: [public/assets/](mdc:public/assets) - Static resources
+
+## Key Features
+
+1. User Identity System
+   - UUID-based guest login
+   - Local storage for user preferences
+   - Activity level tracking
+
+2. Ancestor Generation
+   - Personality types: Philosopher, Gossip Auntie, Livestream Host, Petty God
+   - Dynamic trait generation
+   - Evolution stages: Initial → Familiar → Intimate → Awakened
+
+3. Interaction System
+   - Offerings: Incense, Flowers, Kowtow
+   - Emotion feedback
+   - Cooldown mechanism
+   - Affection level progression
+
+4. Quote System
+   - Daily quotes generation
+   - Favorites collection
+   - Context-aware responses
+
+5. Mini-games
+   - Ancestor's Teaching Translation Quiz
+   - Soul Red Packet Rewards
+
+6. Share System
+   - Multiple templates
+   - Image generation
+   - Social media integration
+
+## Tech Stack
+
+- Vue 3 + Vite
+- Element Plus UI
+- Pinia State Management
+- Vue Router
+- HTML2Canvas

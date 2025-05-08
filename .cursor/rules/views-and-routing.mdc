@@ -1,0 +1,71 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Views and Routing Guide
+
+The application follows a view-based architecture with Vue Router for navigation.
+
+## View Structure
+
+1. [Home.vue](mdc:src/views/Home.vue)
+   - Landing page
+   - Project introduction
+   - Start game button
+   - Feature overview
+
+2. [Generate.vue](mdc:src/views/Generate.vue)
+   - Ancestor generation interface
+   - Surname input/random generation
+   - Ancestor card preview
+   - Typing effect for quotes
+
+3. [Interaction.vue](mdc:src/views/Interaction.vue)
+   - Main interaction interface
+   - Offering buttons (incense, flowers, kowtow)
+   - Emotion display
+   - Evolution progress
+   - Quote display with typing effect
+
+4. [Quotes.vue](mdc:src/views/Quotes.vue)
+   - Today's quotes list
+   - Favorites management
+   - Quote sharing
+   - Quote card generation
+
+5. [MiniGames.vue](mdc:src/views/MiniGames.vue)
+   - Game selection interface
+   - Translation quiz game
+   - Red packet reward game
+   - Score tracking
+
+6. [Share.vue](mdc:src/views/Share.vue)
+   - Share template selection
+   - Preview generation
+   - Social media sharing
+   - Image/link generation
+
+## Routing System
+
+The router configuration in [router/index.js](mdc:src/router/index.js) includes:
+
+1. Route Guards
+   - Authentication check
+   - Ancestor existence check
+   - State loading
+
+2. Meta Information
+   - Page titles
+   - Required states
+   - Transition names
+
+3. Navigation
+   - History mode enabled
+   - Lazy loading for views
+   - Scroll behavior management
+
+4. Error Handling
+   - 404 fallback
+   - Invalid state redirects
+   - Loading states

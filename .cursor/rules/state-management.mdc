@@ -1,0 +1,57 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# State Management Guide
+
+The project uses Pinia for state management, with several specialized stores:
+
+## Store Structure
+
+1. [ancestorStore.js](mdc:src/stores/ancestorStore.js)
+   - Core ancestor data management
+   - Personality and trait generation
+   - Quote management
+   - Interaction logic
+   - Evolution and affection system
+
+2. [userStore.js](mdc:src/stores/userStore.js)
+   - User identity (UUID)
+   - Preferences
+   - Activity tracking
+   - Local storage sync
+
+3. [shareStore.js](mdc:src/stores/shareStore.js)
+   - Share templates
+   - Image generation
+   - Social media integration
+   - Share history
+
+4. [gameStore.js](mdc:src/stores/gameStore.js)
+   - Mini-game state
+   - Quiz questions
+   - Rewards system
+   - Game progress tracking
+
+## Key Concepts
+
+1. Persistence
+   - All stores use localStorage for data persistence
+   - State is loaded on app mount
+   - Changes are automatically saved
+
+2. Store Dependencies
+   - ancestorStore depends on userStore for preferences
+   - shareStore depends on ancestorStore for content
+   - gameStore depends on ancestorStore for rewards
+
+3. State Updates
+   - Use actions for async operations
+   - Use mutations for sync state changes
+   - Computed properties for derived state
+
+4. Error Handling
+   - All stores include error state
+   - Failed operations are gracefully handled
+   - User feedback is provided

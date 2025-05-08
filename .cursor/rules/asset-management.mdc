@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Asset Management Guidelines
+
+## Ancestor Assets
+
+All project assets are managed in the public directory:
+
+- Production Assets: [public/assets/ancestors](mdc:public/assets/ancestors)
+  - Contains all ancestor-related assets
+  - Special ancestor types in [public/assets/ancestors/special](mdc:public/assets/ancestors/special)
+  - Use relative paths from public directory in components
+
+- Distribution Assets: [dist/client/assets/ancestors](mdc:dist/client/assets/ancestors)
+  - Generated during build process
+  - Do not modify directly
+
+## Asset Guidelines
+
+1. Image Requirements
+   - Format: WebP preferred, fallback to PNG
+   - Resolution: 512x512px for ancestor portraits
+   - Size: < 100KB per image
+   - Naming: `{ancestor_type}_{stage}_{variant}.{ext}`
+
+2. Animation Assets
+   - Format: Lottie JSON or CSS animations
+   - Duration: < 3 seconds for transitions
+   - Optimize for performance
+
+3. Sound Effects
+   - Format: MP3 (128kbps)
+   - Duration: < 5 seconds
+   - Volume normalized to -14 LUFS
+
+## Asset Pipeline
+
+1. Development
+   - Place all assets in `public/assets`
+   - Reference using absolute paths from public root
+   - Test with different device sizes
+
+2. Build Process
+   - Assets optimized automatically
+   - WebP conversion for images
+   - Moved to appropriate dist directory
+
+3. Deployment
+   - CDN configuration in [wrangler.jsonc](mdc:wrangler.jsonc)
+   - Cache policies for static assets

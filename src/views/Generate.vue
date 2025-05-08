@@ -79,7 +79,7 @@ const placeholderAvatar = computed(() => {
   if (currentAncestor.value && currentAncestor.value.avatar) {
     return currentAncestor.value.avatar
   }
-  return '/src/assets/ancestors/default-ancestor.png'
+  return '/assets/ancestors/default-ancestor.png'
 })
 
 const currentAncestor = computed(() => ancestorStore.currentAncestor || {})
